@@ -29,7 +29,7 @@ public class AppiumScript {
         driver.setLogLevel(Level.INFO);
     }
 
-    @Test
+    @RepeatedTest(value = 5)
     public void testUntitled() {
         // driver.findElement(By.xpath("//*[@text='Conflict of Nations - World War 3']")).click();
         driver.findElement(By.xpath("//*[@id='func_sg_loginform_button']")).click();
